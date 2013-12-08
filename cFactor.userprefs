@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4_64.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="cFactor/ViewControllers/Social Search/cFactor_social_Search.cs">
+    <Files>
+      <File FileName="cFactor/ViewControllers/Social Community_Media/cFactor_socialCommunity_Media_AlbumDetail.cs" Line="1" Column="1" />
+      <File FileName="cFactor/ViewControllers/Social Community_Media/cFactor_socialCommunity_Media_AlbumDetailCell.cs" Line="1" Column="1" />
+      <File FileName="cFactor/ViewControllers/Social Community_Media/cFactor_socialCommunity_Media_AllAlbumsCell.cs" Line="1" Column="1" />
+      <File FileName="cFactor/ViewControllers/Social Community_Media/cFactor_socialCommunity_Media.cs" Line="1" Column="1" />
+      <File FileName="cFactor/Main.cs" Line="1" Column="1" />
+      <File FileName="cFactor/ViewControllers/Social Search/cFactor_social_Search.cs" Line="58" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../MADMUCfarm 3/MadmucFarm/LocalStorage/LocalStorage.cs" line="337" offsetX="383" offsetY="5040" expression="seedAll" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8E9EF68-4C6A-429A-8DA1-0D133CBF695D}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>cFactor</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>cFactor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cfactor.jpg" />
+    <BundleResource Include="Resources\images.jpeg" />
+    <BundleResource Include="Resources\blogauthor.jpeg" />
+    <BundleResource Include="Resources\starBtn.png" />
+    <BundleResource Include="Resources\user.jpg" />
+    <BundleResource Include="Resources\user_other.jpg" />
+    <BundleResource Include="Resources\User info.png" />
+    <BundleResource Include="Resources\Star_off.png" />
+    <BundleResource Include="Resources\Star_on.png" />
+    <BundleResource Include="Resources\coverPage.png" />
+    <BundleResource Include="Resources\generic_folder.png" />
+    <BundleResource Include="Resources\application_vnd_ms_word.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\arrow_refresh.png" />
+    <BundleResource Include="Resources\search.jpeg" />
+    <BundleResource Include="Resources\down.png" />
+    <BundleResource Include="Resources\Refresh-icon.png" />
+    <BundleResource Include="Resources\rdio-icon.png" />
+    <BundleResource Include="Resources\icon-refresh.png" />
+    <BundleResource Include="Resources\refresh01.jpg" />
+    <BundleResource Include="Resources\refresh_button_inactive.png" />
+    <BundleResource Include="Resources\fullscreen.png" />
+    <BundleResource Include="Resources\pizza-junction-and-snack.jpg" />
+    <BundleResource Include="Resources\pizza.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Models\cFactor_socialCommunities_pickerSource.cs" />
+    <Compile Include="ViewControllers\Social Communities\cFactor_socialCommunities.cs" />
+    <Compile Include="ViewControllers\Social Communities\cFactor_socialCommunities.designer.cs">
+      <DependentUpon>cFactor_socialCommunities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Communities\cFactor_socialCommunities_bottomViewDVC.cs" />
+    <Compile Include="Services\WebServiceRequest.cs" />
+    <Compile Include="ViewControllers\Social Community\cFactor_socialCommunity.cs" />
+    <Compile Include="ViewControllers\Social Community\cFactor_socialCommunity.designer.cs">
+      <DependentUpon>cFactor_socialCommunity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cFactor_socialCommunity_naviPickSource.cs" />
+    <Compile Include="ViewControllers\Social Community_Content\cFactor_socialCommunity_Content.cs" />
+    <Compile Include="ViewControllers\Social Community_Content\cFactor_socialCommunity_Content.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cFactor_socialCommunity_Content_filterSource.cs" />
+    <Compile Include="Models\cFactor_socialCommunity_Content_tableViewSource.cs" />
+    <Compile Include="ViewControllers\Social Activity Feed\ActivityFeedCell.cs" />
+    <Compile Include="ViewControllers\Social Activity Feed\ActivityFeedCell.designer.cs" />
+    <Compile Include="ViewControllers\Social Community_Content_ActionMenu\cFactor_socialCommunity_actionMenu.cs" />
+    <Compile Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_BlogCell.cs" />
+    <Compile Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_BlogCell.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_BlogCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cFactor_socialCommunity_Content_Blog_tableViewSource.cs" />
+    <Compile Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_Blog.cs" />
+    <Compile Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_Blog.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Blog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Content_Blog\cFactor_SocialCommunity_Blog_Add.cs" />
+    <Compile Include="Elements\SimpleMultilineEntryElement.cs" />
+    <Compile Include="ViewControllers\Social Profile\cFactor_socialProfile.cs" />
+    <Compile Include="ViewControllers\Social Profile\cFactor_socialProfile.designer.cs">
+      <DependentUpon>cFactor_socialProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Profile\cFactor_soicalProfile_NaviModel.cs" />
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resources.cs" />
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resources.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_DVC.cs" />
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_Folder.cs" />
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_Folder.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Resource_Folder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_subFolder_DVC.cs" />
+    <Compile Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_Doc.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testCell.cs" />
+    <Compile Include="testCell.designer.cs">
+      <DependentUpon>testCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AllAlbumsCell.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AllAlbumsCell.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Media_AllAlbumsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetail.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetail.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Media_AlbumDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetailCell.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetailCell.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Media_AlbumDetailCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_SocialCommunity_Media_Item.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_SocialCommunity_Media_Item.designer.cs">
+      <DependentUpon>cFactor_SocialCommunity_Media_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_Item_CollectionVIewCell.cs" />
+    <Compile Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_Item_CollectionVIewCell.designer.cs">
+      <DependentUpon>cFactor_socialCommunity_Media_Item_CollectionVIewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Social Search\cFactor_social_Search.cs" />
+    <Compile Include="ViewControllers\Social Search\cFactor_social_Search.designer.cs">
+      <DependentUpon>cFactor_social_Search.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="ViewControllers\Social Communities\cFactor_socialCommunities.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community\cFactor_socialCommunity.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Activity Feed\ActivityFeedCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_BlogCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Content_Blog\cFactor_socialCommunity_Blog.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Profile\cFactor_socialProfile.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resources.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Resources\cFactor_socialCommunity_Resource_Folder.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media.xib" />
+    <InterfaceDefinition Include="testCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AllAlbumsCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetail.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_AlbumDetailCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_SocialCommunity_Media_Item.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Media\cFactor_socialCommunity_Media_Item_CollectionVIewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Search\cFactor_social_Search.xib" />
+    <InterfaceDefinition Include="ViewControllers\Social Community_Content\cFactor_socialCommunity_Content.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewControllers\Social Communities\" />
+    <Folder Include="ViewControllers\Social Community\" />
+    <Folder Include="ViewControllers\Social Community_Content\" />
+    <Folder Include="ViewControllers\Social Activity Feed\" />
+    <Folder Include="ViewControllers\Social Community_Content_Blog\" />
+    <Folder Include="ViewControllers\Social Community_Content_ActionMenu\" />
+    <Folder Include="Elements\" />
+    <Folder Include="ViewControllers\Social Profile\" />
+    <Folder Include="ViewControllers\Social Community_Resources\" />
+    <Folder Include="ViewControllers\Social Community_Media\" />
+    <Folder Include="ViewControllers\Social Search\" />
+    <Folder Include="Resources\ViewControllers\Social Community_Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
